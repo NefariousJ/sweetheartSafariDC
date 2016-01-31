@@ -8,10 +8,10 @@ menu:
 jump mainmenu
 
 label duckdate1
-	"You lean on the fence like the hella cool high school student you are"
-	"Sure you should be romancing some animals so you can escape"
-	"But there's always time for looking cool"
-	"Wait you're looking so COOL someone sidles up to you."
+	"You lean on the fence like the hella cool high school student you are."
+	"Sure, you should be romancing some animals so you can escape..."
+	"But there's always time for looking cool!"
+	"Wait, you're looking so COOL someone sidles up to you."
 show duck normal
 	d "Howdy ho cutie. Do you know where I could get some dopealicious"
 show duck angry
