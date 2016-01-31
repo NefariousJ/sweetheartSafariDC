@@ -13,9 +13,9 @@ label duckdate1
 	"But there's always time for looking cool!"
 	"Wait, you're looking so COOL someone sidles up to you."
 show duck normal
-	d "Howdy ho cutie. Do you know where I could get some dopealicious"
+	du "Howdy ho cutie. Do you know where I could get some dopealicious"
 show duck angry
-	d "QUACK"
+	du "QUACK"
 show duck normal
 	"..."
 	"Did that duck just quack or ask you for drugs?"
@@ -27,18 +27,18 @@ menu
 		jump duckdate1_choice1_drugsarequack
 
 label duckdate1_choice1_drugsarewack
-	d "Drugs are mega cool"
+	du "Drugs are mega cool"
 		jump duckdate1_choice2
 
 label duckdate1_choice1_drugsarequack
-	d "Are you making fun of me or something?"
+	du "Are you making fun of me or something?"
 		jump duckdate1_choice2
 label duckdate1_choice2
-	d "After a long day I just want to do some"
+	du "After a long day I just want to do some"
 show duck angry
-	d "QUACK"
+	du "QUACK"
 show duck normal
-	d "ya feel doggo?"
+	du "ya feel doggo?"
 
 menu:
 	"Friendship is my antidrug"
@@ -47,18 +47,18 @@ menu:
 		jump duckdate1_choice2_Ifeel
 
 label duckdate1_choice2_antidrug
-	d "You have a will of iron."
-	d "If you find some, you know where to find me."
+	du "You have a will of iron."
+	du "If you find some, you know where to find me."
 	"Wait, didn't she find you?"
 	End duckdate1
 
 label duckdate1_choice2_Ifeel
-	d "Yes! You'll show me where to get some..."
+	du "Yes! You'll show me where to get some..."
 show duck angry
-	d "QUACK"
+	du "QUACK"
 show duck normal
-	d "later right?"
-	d "That'd be super hip."
+	du "later right?"
+	du "That'd be super hip."
 	"She leaves before you can tell her you have no idea how to get quack."
 	"... or what quack is supposed to be."
 	Set $drugs to true
@@ -82,16 +82,16 @@ label duckdate2
 	"Just gettin' in some nice relaxation time-"
 	"Aw man it's that duck again"
 show duck normal
-	d "Hey cutie, you got any..."
+	du "Hey cutie, you got any..."
 show duck angry
-	d "QUACK"
+	du "QUACK"
 show duck normal
 	if $drugs is true
-	d "So are you going to show me some"
+	du "So are you going to show me some"
 show duck angry
-	d "QUACK"
+	du "QUACK"
 show duck normal
-	d "Cutie?"
+	du "Cutie?"
 menu:
 	"Actually I lied..."
 	jump duckdate2_choice1_lies
@@ -100,7 +100,7 @@ menu:
 	jump to duckdate2_thisway
 
 	else
-	d "Did you find some?"
+	du "Did you find some?"
 menu:
 	"Just say no"
 	jump to duckdate2_choice1_no
@@ -109,14 +109,14 @@ menu:
 	jump to duckdate2_thisway
 
 label duckdate2_choice1_lies
-	d "You lied... oh, I see."
-	d "So you don't have any..."
-	d "Well, I'm sure you'll find some."
+	du "You lied... oh, I see."
+	du "So you don't have any..."
+	du "Well, I'm sure you'll find some."
 	jump duckdate2_choice2
 
 label duckdate2_choice1_no
-	d "But everyone enjoys it!"
-	d "We should try some! Do you know where I can find some?"
+	du "But everyone enjoys it!"
+	du "We should try some! Do you know where I can find some?"
 
 menu:
 	"I DON'T HAVE ANY 'QUACK'"
@@ -138,9 +138,9 @@ scene bg enterance day
 	END Failstate
 
 label duckdate2_choice2_NoQuack
-	d "..."
-	d "..."
-show duck cute 
+	du "..."
+	du "..."
+show duck blush 
 	d "okay"
 	"She leaves with a light flush on her cheeks."
 	"What a weird bird."
@@ -152,22 +152,22 @@ label duckdate3
 	"You decide to fit a bit more hella cool fence leaning in."
 	"Wait, there's someone in your spot."
 show duck normal
-	d "Hey... cutie can we talk?"
+	du "Hey... cutie can we talk?"
 	"This seems suspicious but okay..."
-	d "I want to tell you the truth."
-	d "I don't actually want any"
+	du "I want to tell you the truth."
+	du "I don't actually want any"
 show duck angry
-	d "QUACK"
+	du "QUACK"
 show duck normal
-	d "I'm actually part of an undercover cop program"
-	d "21 flap street"
-	d "We've been putting undercover cops in zoos all around the country"
-	d "My cunning disguise was good. But perhaps it was too good."
-	d "At first I was just trying to use you to find the source but..."
-	d "No matter how hard I tried you never gave in."
-	d "Your iron will is just so..."
-	d "attractive."
-	d "Tell me cutie... do I have a chance?"
+	du "I'm actually part of an undercover cop program"
+	du "21 flap street"
+	du "We've been putting undercover cops in zoos all around the country"
+	du "My cunning disguise was good. But perhaps it was too good."
+	du "At first I was just trying to use you to find the source but..."
+	du "No matter how hard I tried you never gave in."
+	du "Your iron will is just so..."
+	du "attractive."
+	du "Tell me cutie... do I have a chance?"
 menu:
 	"My antidrug... is you."
 		jump duckdate3_LoveEnd
@@ -176,14 +176,14 @@ menu:
 		jump duckdate3_RejectionEnd
 
 label duckdate3_LoveEnd
-	d "Really cutie! I can't believe it."
-show duck cute
-	d "Come here..."
+	du "Really cutie! I can't believe it."
+show duck blush
+	du "Come here..."
 	"You spend a long time with duck, you're still picking the feathers out of your clothes later."
 	End duckdate3_LoveEnd
 
 label duckdate3_RejectionEnd
-	d "I understand. My alterego was very convincing..."
-	d "I'll always wonder, what might have been"
+	du "I understand. My alterego was very convincing..."
+	du "I'll always wonder, what might have been"
 	"She leaves, dejected. Thank goodness."
 	End duckdate3_RejectionEnd
